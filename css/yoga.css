@@ -123,6 +123,7 @@ header h1 a:hover {
 
 /*-------------- NAV --------------*/
 nav {
+	
 	padding: 2% 0;
 	list-style-type: none;
 	width: 70%;
@@ -191,44 +192,31 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 
 /*-------------- MAIN --------------*/
-
-/*-------- VIRTUAL BTN ROW --------*/
-
-.virtual {
-	background-color:rgb(218, 223, 230);
-	margin: 0 auto;
-	padding: 3rem 0 1.5rem 0;
-	text-align: center;
+main {
+    padding: 2rem 0;
+    background-color:rgb(218, 223, 230);
+    min-height: 10rem;
 }
-.virtual h2 {
-	font-family: 'Kufam', cursive;
-	font-weight: 700;
-	font-size: 1.8rem;
-	padding-top: 1rem;
-}
-
-.virtual .container .row {
-	padding: 1.5rem 0;
-}
-
-.virtual .container .row .col button#virtualBtn {
-	font-family: 'Montserrat', sans-serif;
-	color: rgb(49, 62, 79);
-	border: 2px solid rgb(49, 62, 79);
-	background-color:rgb(218, 223, 230);
-}
-
-.virtual .container .row .col button#virtualBtn:hover {
-	background-color: #fff;
-}
-
-/*-------- CAROUSEL --------*/
 .classInfo {
 	font-weight: 700;
 	background-color:rgb(218, 223, 230);
 	text-align: left;
 	width: 80%;
-	margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.session {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-column-gap: 1.55rem;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.session img {
+    width: 100%;
 }
 
 .classInfo h2 {
@@ -252,104 +240,6 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	font-family: 'Montserrat', sans-serif;
 
 }
-
-.carousel {
-	background-color:rgb(218, 223, 230);
-	margin: 0 auto;
-	padding: 2rem 0;
-}
-
-.carousel.slide {
-	width: 80%;
-	padding: 0;
-}
-
-.about {
-	background-color:rgb(218, 223, 230);
-	margin: 0 auto;
-	text-align: center;
-	padding: 3rem 0;
-}
-.about h2 {
-	font-family: 'Kufam', cursive;
-	font-weight: 700;
-	margin: 0;
-	padding-bottom: .8rem;
-}
-
-.about h5 {
-	padding: 1rem 0;
-	margin: 0 auto;
-	width: 70%;
-	font-size: 1.5rem;
-	color: #000;
-	font-family: 'Montserrat', sans-serif;
-
-}
-
-
-
-/*-------- REVIEWS --------*/
-.reviews {
-	background-color: #fff;
-	padding: 2% 0;
-}
-.reviews .row {
-	margin: 0 auto;
-	width: 85%;
-	text-align: left;
-	font-family: 'Montserrat', sans-serif;
-
-}
-
-.reviews .row .col-6 {padding: 0; width: 100%;
-
- }
-
-.reviews .row .col-6 .title {
-	font-family: 'Kufam', cursive;
-
-	display: grid;
-	text-align: left;
-	grid-template-columns: 68% auto;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-.reviews .row .col-6 .title h2 {font-family: 'Kufam', cursive;}
-
-.reviews .row .col-6 .stars {
-	display: grid;
-	grid-template-columns: 62% auto;
-	grid-column-gap: 0;
-	text-align: right;
-	width: 100%;
-}
-
-.bi.bi-star-fill {color: green; font-size: 1.2rem;}
-
-.reviews .row .col-6 .stars h6 {padding-left: .8rem; text-align: right;}
-
-.reviews hr {
-	width: 90%;
-	margin: 0 auto;
-	border: 1px solid rgb(194, 194, 194);
-	margin-bottom: 2%;
-}
-
-
-.reviews .row .col-3 {
-	display: grid;
-	grid-template-columns: 1fr;
-	margin: 0 auto;
-	width: 100%;
-	padding: 0;
-
-}
-
-
-.reviews .row .col-3 p {font-family: 'Montserrat', sans-serif;}
 
 /*-------------- FOOTER --------------*/
 footer {
@@ -375,51 +265,6 @@ footer h6#footerIcons {
 
 footer h6#footerIcons:last-child {margin-right: 0;}
 
-
-
-
-
-
-  /*-------------- DESKTOP --------------*/
-/* @media only screen and (min-width: 770px) { */
-
-	/*------ DESKTOP ------*/
-
-
-
-
-	/*------ MAIN DIV LINKS ------*/
-
-
-/* } */
-
-/*-------------- Tablet --------------*/
-/* @media only screen and (max-width: 769px) 
-and (min-width: 501px) { */
-
-	/*------ NAVIGATION ------*/
-
-
-
-	/*------ MAIN DIV LINKS ------*/
-
-/* } */
-
-
-
-
-/*-------------- MOBILE --------------*/
-  /* @media only screen and (max-width: 500px) { */
-	
-	/*------ NAVIGATION ------*/
-
-	
-
-	/*------ MAIN DIVS SECTION ------*/
-
-	/*-------FOOTER -------*/
-
-/* } */
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
