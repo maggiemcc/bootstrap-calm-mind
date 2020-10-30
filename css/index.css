@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Start your code here: */
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 2rem;
+}
+
+/*-------------- HEADER --------------*/
+.container-fluid {
+	background-color:rgb(241, 241, 241);
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.mainHr {
+	border: 2px solid rgb(49, 62, 79);
+	padding: 0;
+	margin: .5rem 0;
+}
+
+hr {
+	border: 1px solid rgb(194, 194, 194);
+	padding: 0;
+	margin: 0;
+}
+
+.navHr {
+	border: 1px solid rgb(194, 194, 194);
+	padding: 0;
+	margin: auto;
+	width: 60%;
+}
+
+
+.navHr:first-child {margin-bottom: 1.5rem;}
+.navHr:last-child {margin-top: 1.5rem;}
+
+
+header {
+	/* background-color:rgb(241, 241, 241); */
+	padding: 1rem 2%;
+	text-align: center;
+}
+
+header h1 a {
+	/* color: rgb(49, 62, 79); */
+	color: rgb(95, 95, 95);
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+header h2 {
+	/* color: rgb(49, 62, 79); */
+	color: rgb(95, 95, 95);
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+
+header h1 a:hover {
+	text-decoration: none;
+	color: rgb(95, 95, 95);
+}
+
+/*-------------- NAV --------------*/
+nav {
+	background-color: rgb(241, 241, 241);
+	padding: 2% 0;
+	list-style-type: none;
+}
+
+
+nav li a {
+	color: rgb(114, 114, 114);
+	font-weight: 600;
+}
+
+nav li a:hover {
+	color: rgb(49, 62, 79);
+}
+
+
+
+/*-------------- H1, H2, P --------------*/
+h1 {font-family: Arial, Helvetica, sans-serif; font-size: 2.5rem; font-weight: 700; text-transform: uppercase;}
+h2 {font-family: Arial, Helvetica, sans-serif; font-size: 2rem; font-weight: 500; text-transform: none;}
+p {font-family: Arial, Helvetica, sans-serif; font-size: 1.5rem; line-height: 1.8rem; font-weight: 400;}
+h1, p {margin: 1.5rem 0 .5rem 0;}
+h2 {margin: 1.5rem 0 .5rem 0;}
+
+/*--------------  BUTTONS -------------- */
+
+
+
+/*-------------- FOOTER --------------*/
+footer {
+	font-size: 1.8rem;
+	text-align: center;
+	justify-content: center;
+	padding: 1rem 2%;
+	margin-top: 1.5rem;
+	color: white;
+	background-color: black;
+}
+
+
+  /*-------------- DESKTOP --------------*/
+@media only screen and (min-width: 770px) {
+
+	/*------ DESKTOP ------*/
+
+
+
+
+	/*------ MAIN DIV LINKS ------*/
+
+
+}
+
+/*-------------- Tablet --------------*/
+@media only screen and (max-width: 769px) 
+and (min-width: 501px) {
+
+	/*------ NAVIGATION ------*/
+
+
+
+	/*------ MAIN DIV LINKS ------*/
+
+}
+
+
+
+
+/*-------------- MOBILE --------------*/
+  @media only screen and (max-width: 500px) {
+	
+	/*------ NAVIGATION ------*/
+
+	
+
+	/*------ MAIN DIVS SECTION ------*/
+
+	/*-------FOOTER -------*/
+
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
