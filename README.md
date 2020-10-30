@@ -1,9 +1,9 @@
 # calm-mind
 The URL you used for layout is: 
-https://www.harley-davidson.com/us/en/index.html
+https://www.cradleyoursoulym.com/
 
 My website URL is:
-https://mm-road-warriors.netlify.app/
+https://mm-calm-mind.netlify.app/
 
 # Marketing Website
 

@@ -63,7 +63,8 @@ html {
 
 /*-------------- HEADER --------------*/
 .container-fluid {
-	background-color:rgb(241, 241, 241);
+	/* background-color:rgb(241, 241, 241); */
+	background-color: rgb(245, 245, 245);
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -76,16 +77,9 @@ html {
 }
 
 hr {
-	border: 1px solid rgb(194, 194, 194);
+	border: 1px solid rgb(49, 62, 79);
 	padding: 0;
 	margin: 0;
-}
-
-.navHr {
-	border: 1px solid rgb(194, 194, 194);
-	padding: 0;
-	margin: auto;
-	width: 60%;
 }
 
 
@@ -120,10 +114,21 @@ header h1 a:hover {
 
 /*-------------- NAV --------------*/
 nav {
-	background-color: rgb(241, 241, 241);
+	
 	padding: 2% 0;
 	list-style-type: none;
+	width: 70%;
+	margin: 0 auto;
 }
+
+.navHr {
+	border: 1px solid rgb(194, 194, 194);
+	padding: 0;
+	margin: auto;
+	width: 100%;
+}
+
+nav li {padding: .5rem;}
 
 
 nav li a {
@@ -135,6 +140,35 @@ nav li a:hover {
 	color: rgb(49, 62, 79);
 }
 
+.container-fluid .row {
+	margin: 0 auto;
+	padding: 0;
+	width: 70%;
+	padding-bottom: 2rem;
+}
+
+.row .col-6 {
+	display: flex; 
+	justify-content: center;
+	align-items: center; 
+}
+
+
+#navButtons {
+	width: 80%;
+	background-color: rgb(49, 62, 79);
+	outline: none;
+	border: none;
+	padding: 2% 0;
+}
+
+#navButtons:hover {
+	background-color: #fff;
+	color: rgb(49, 62, 79);
+	border: 2px solid rgb(49, 62, 79);
+	margin: 0;
+}
+
 
 
 /*-------------- H1, H2, P --------------*/
@@ -144,20 +178,174 @@ p {font-family: Arial, Helvetica, sans-serif; font-size: 1.5rem; line-height: 1.
 h1, p {margin: 1.5rem 0 .5rem 0;}
 h2 {margin: 1.5rem 0 .5rem 0;}
 
-/*--------------  BUTTONS -------------- */
 
 
+
+
+/*-------------- MAIN --------------*/
+
+/*-------- VIRTUAL BTN ROW --------*/
+
+.virtual {
+	background-color:rgb(218, 223, 230);
+	margin: 0 auto;
+	padding: 3rem 0 1.5rem 0;
+	text-align: center;
+}
+
+.virtual .container .row {
+	padding: 1.5rem 0;
+}
+
+.virtual .container .row .col button#virtualBtn {
+	color: rgb(49, 62, 79);
+	border: 2px solid rgb(49, 62, 79);
+	background-color:rgb(218, 223, 230);
+}
+
+.virtual .container .row .col button#virtualBtn:hover {
+	background-color: #fff;
+}
+
+/*-------- CAROUSEL --------*/
+.classInfo {
+	background-color:rgb(218, 223, 230);
+	text-align: left;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.classInfo h2 {padding-top: 1rem;}
+
+.classInfo ul {
+	list-style-type: disc;
+	margin-left: 3%;
+	font-size: 1.5rem;
+	line-height: 1.7rem;
+}
+
+.carousel {
+	background-color:rgb(218, 223, 230);
+	margin: 0 auto;
+	padding: 2rem 0;
+}
+
+.carousel.slide {
+	width: 80%;
+	padding: 0;
+}
+
+.about {
+	background-color:rgb(218, 223, 230);
+	margin: 0 auto;
+	text-align: center;
+	padding: 3rem 0;
+}
+.about h2 {
+	margin: 0;
+	padding-bottom: .8rem;
+}
+
+.about h5 {
+	padding: 1rem 0;
+	margin: 0 auto;
+	width: 70%;
+	font-size: 1.5rem;
+	color: #000;
+}
+
+
+
+/*-------- REVIEWS --------*/
+.reviews {
+	background-color: #fff;
+	padding: 2% 0;
+}
+.reviews .row {
+	margin: 0 auto;
+	width: 85%;
+	text-align: left;
+}
+
+.reviews .row .col-6 {padding: 0;width: 100%;}
+
+.reviews .row .col-6 .title {
+	display: grid;
+	text-align: left;
+	grid-template-columns: 68% auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.reviews .row .col-6 .stars {
+	display: grid;
+	grid-template-columns: 62% auto;
+	grid-column-gap: 0;
+	text-align: right;
+	width: 100%;
+}
+
+.bi.bi-star-fill {
+	color: green;
+	font-size:1.2rem;
+}
+
+.reviews .row .col-6 .stars h6 {
+	padding-left: .8rem;
+	text-align: right;
+}
+
+.reviews hr {
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid rgb(194, 194, 194);
+	margin-bottom: 2%;
+}
+
+
+.reviews .row .col-3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
 
 /*-------------- FOOTER --------------*/
 footer {
 	font-size: 1.8rem;
 	text-align: center;
 	justify-content: center;
-	padding: 1rem 2%;
-	margin-top: 1.5rem;
+	padding: 2%;
 	color: white;
-	background-color: black;
+	background-color: rgb(49, 62, 79);
 }
+
+footer h6 {
+	font-size: 1.75rem;
+	padding-bottom: 1rem;
+}
+
+footer h6#email {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+footer h6#footerIcons {
+	display: inline-block;
+	font-size: 3rem;
+	margin-right: 8%;
+	cursor: pointer;
+}
+
+footer h6#footerIcons:last-child {
+	margin-right: 0;
+}
+
+
+
+
 
 
   /*-------------- DESKTOP --------------*/
