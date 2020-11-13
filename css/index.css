@@ -66,14 +66,17 @@ body {
 	font-size: 2rem;
 }
 
-/*-------------- HEADER --------------*/
+/*-------------- HEADER/NAV Container --------------*/
 .container-fluid {
 	/* background-color:rgb(241, 241, 241); */
-	background-color: rgb(245, 245, 245);
+	/* background-color: rgb(245, 245, 245); */
+	background-color: rgb(255, 255, 255);
 	padding: 0;
 	margin: 0;
 	width: 100%;
 }
+
+/*------ Hrs ------ */
 
 .mainHr {
 	border: 2px solid rgb(49, 62, 79);
@@ -87,11 +90,17 @@ hr {
 	margin: 0;
 }
 
-
 .navHr:first-child {margin-bottom: 1.5rem;}
 .navHr:last-child {margin-top: 1.5rem;}
 
+.navHr {
+	border: 1px solid rgb(194, 194, 194);
+	padding: 0;
+	margin: 1rem 0;
+}
 
+
+/*-------------- HEADER--------------*/
 header {
 	/* background-color:rgb(241, 241, 241); */
 	padding: 1rem 2%;
@@ -122,40 +131,42 @@ header h1 a:hover {
 }
 
 /*-------------- NAV --------------*/
-nav {
-	padding: 2% 0;
-	list-style-type: none;
-	width: 70%;
+nav.navbar.navbar-expand-lg.navbar-light {
+	background-color: #fff;
+	text-align: center;
 	margin: 0 auto;
-	font-family: 'Montserrat', sans-serif;
+	
 }
 
-.navHr {
-	border: 1px solid rgb(194, 194, 194);
+.navbar-light .navbar-toggler {
+	border: 2px solid rgb(49, 62, 79);
+	background-color: #fff;
+	margin: 0;
 	padding: 0;
-	margin: auto;
-	width: 100%;
+	height: 40px;
+	width: 40px;
+
 }
 
-nav li {padding: .5rem;}
+.navbar-light .navbar-toggler-icon {background-image: url(../images/menu.svg);}
+
+ul.navbar-nav.mr-auto {margin: 0 auto;}
+li.nav-item {padding: .5rem 1rem;}
+a.nav-item {font-family: 'Montserrat', sans-serif;}
 
 
-nav li a {
-	color: rgb(114, 114, 114);
-	font-weight: 600;
-}
-nav li a.nav-link.active {color: rgb(49, 62, 79);}
+li.nav-item.active, li.nav-item:hover {color: rgb(49, 62, 79);}
+li.nav-item.active a, li.nav-item:hover a {font-weight: 600;}
 
-nav li a:hover {color: rgb(49, 62, 79);}
 
-.container-fluid .row {
+/*-------------- btnRow --------------*/
+.row#btnRow {
+	width: 80%;
 	margin: 0 auto;
-	padding: 0;
-	width: 70%;
-	padding-bottom: 2rem;
+	padding: 2rem 0;
 }
 
-.row .col-6 {
+#btnRow .col {
 	display: flex; 
 	justify-content: center;
 	align-items: center; 
@@ -163,11 +174,11 @@ nav li a:hover {color: rgb(49, 62, 79);}
 
 
 #navButtons {
-	width: 80%;
+	width: 100%;
 	background-color: rgb(49, 62, 79);
 	outline: none;
 	border: none;
-	padding: 2% 0;
+	padding: .8rem 0;
 }
 
 #navButtons:hover {
@@ -191,15 +202,18 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 
 /*-------------- MAIN --------------*/
+/*-------------- virtual class info section --------------*/
+#virtual {
+	background-color:rgb(218, 223, 230);
+}
 
 /*-------- VIRTUAL BTN ROW --------*/
-
 .virtual {
-	background-color:rgb(218, 223, 230);
 	margin: 0 auto;
-	padding: 3rem 0 1.5rem 0;
+	padding: 3rem 2%;
 	text-align: center;
 }
+
 .virtual h2 {
 	font-family: 'Kufam', cursive;
 	font-weight: 700;
@@ -207,22 +221,29 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	padding-top: 1rem;
 }
 
-.virtual .container .row {
-	padding: 1.5rem 0;
+.virtual .row {
+	padding: 2rem 0;
+	margin: 0 auto;
 }
 
-.virtual .container .row .col button#virtualBtn {
+.virtual .row .col {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.virtual .row .col button#virtualBtn {
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(49, 62, 79);
 	border: 2px solid rgb(49, 62, 79);
-	background-color:rgb(218, 223, 230);
+	height: 100%;
+	width: 90%;
+	font-weight: 500;
 }
 
-.virtual .container .row .col button#virtualBtn:hover {
-	background-color: #fff;
-}
+.virtual .row .col button#virtualBtn:hover {background-color: #fff;}
 
-/*-------- CAROUSEL --------*/
+
+/*----- Class info -----*/
 .classInfo {
 	font-weight: 700;
 	background-color:rgb(218, 223, 230);
@@ -248,39 +269,45 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	list-style-type: disc;
 	margin-left: 3%;
 	font-size: 1.5rem;
+	font-weight: 500;
 	line-height: 1.7rem;
 	font-family: 'Montserrat', sans-serif;
-
 }
 
+
+/*-------- CAROUSEL --------*/
 .carousel {
 	background-color:rgb(218, 223, 230);
 	margin: 0 auto;
-	padding: 2rem 0;
+	padding: 2rem 2%;
 }
 
 .carousel.slide {
-	width: 80%;
+	width: 100%;
+	max-width: 850px;
 	padding: 0;
 }
 
-.about {
+/*-------- ABOUT --------*/
+#about {
 	background-color:rgb(218, 223, 230);
 	margin: 0 auto;
 	text-align: center;
-	padding: 3rem 0;
+	padding: 3rem 2%;
 }
-.about h2 {
+
+#about h2 {
 	font-family: 'Kufam', cursive;
 	font-weight: 700;
 	margin: 0;
 	padding-bottom: .8rem;
 }
 
-.about h5 {
+#about h5 {
 	padding: 1rem 0;
 	margin: 0 auto;
-	width: 70%;
+	width: 100%;
+	max-width: 750px;
 	font-size: 1.5rem;
 	color: #000;
 	font-family: 'Montserrat', sans-serif;
@@ -290,11 +317,11 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 
 /*-------- REVIEWS --------*/
-.reviews {
+#reviews {
 	background-color: #fff;
 	padding: 2% 0;
 }
-.reviews .row {
+#reviews .row {
 	margin: 0 auto;
 	width: 85%;
 	text-align: left;
@@ -302,11 +329,11 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 }
 
-.reviews .row .col-6 {padding: 0; width: 100%;
+#reviews .row .col-6 {padding: 0; width: 100%;
 
  }
 
-.reviews .row .col-6 .title {
+#reviews .row .col-6 .title {
 	font-family: 'Kufam', cursive;
 
 	display: grid;
@@ -317,9 +344,9 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	width: 100%;
 }
 
-.reviews .row .col-6 .title h2 {font-family: 'Kufam', cursive;}
+#reviews .row .col-6 .title h2 {font-family: 'Kufam', cursive;}
 
-.reviews .row .col-6 .stars {
+#reviews .row .col-6 .stars {
 	display: grid;
 	grid-template-columns: 62% auto;
 	grid-column-gap: 0;
@@ -329,9 +356,9 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 .bi.bi-star-fill {color: green; font-size: 1.2rem;}
 
-.reviews .row .col-6 .stars h6 {padding-left: .8rem; text-align: right;}
+#reviews .row .col-6 .stars h6 {padding-left: .8rem; text-align: right;}
 
-.reviews hr {
+#reviews hr {
 	width: 90%;
 	margin: 0 auto;
 	border: 1px solid rgb(194, 194, 194);
@@ -339,7 +366,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 }
 
 
-.reviews .row .col-3 {
+#reviews .row .col-3 {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 0 auto;
@@ -349,7 +376,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 }
 
 
-.reviews .row .col-3 p {font-family: 'Montserrat', sans-serif;}
+#reviews .row .col-3 p {font-family: 'Montserrat', sans-serif;}
 
 /*-------------- FOOTER --------------*/
 footer {
