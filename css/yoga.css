@@ -206,42 +206,56 @@ main {
     background-color:rgb(218, 223, 230);
     min-height: 10rem;
 }
-.classInfo {
+#classInfo {
 	font-weight: 700;
 	background-color:rgb(218, 223, 230);
 	text-align: left;
-	width: 80%;
+	width: 98%;
     margin: 0 auto;
-    text-align: center;
+	text-align: center;
+	padding: 0 2%;
     
 }
-.session {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    grid-column-gap: 1.55rem;
+
+
+#session {
+    width: 95%;
     padding: 1rem 0;
-    text-align: left;
+	margin: 0 auto;
 }
 
-.session img {
-    width: 100%;
+#session #summary {
+	width: 100%;
+	text-align: left;
+	margin: 0 auto;
+
 }
 
-.classInfo h2 {
+#session #img {
+	width: 100%;
+	margin: 0 auto;
+}
+#session #img img {
+	width: 80%;
+	/* max-width: 400px; */
+	padding: 0;
+	margin: auto;
+}
+
+#classInfo h2 {
 	font-family: 'Kufam', cursive;
 	font-weight: 700;
 	font-size: 1.8rem;
 	padding-top: 1rem;
 }
-.classInfo h3 {
+#classInfo h3 {
 	font-family: 'Kufam', cursive;
 	font-size: 1.3rem;
 	font-weight: 700;
 	padding: 1.3rem 0 1rem 0;
 }
 
-.classInfo ul {
+#classInfo ul {
 	list-style-type: disc;
 	margin-left: 3%;
 	font-size: 1.5rem;
