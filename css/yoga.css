@@ -60,22 +60,22 @@ body {
 	font-family: 'Kufam', cursive;
 }
 
-.container {
-	max-width: 800px;
+.container-fluid {
+	/* max-width: 800px; */
 	margin: 0 auto;
-	font-size: 2rem;
+	padding: 0;
 }
 
 /*-------------- HEADER/NAV Container --------------*/
-.container-fluid {
+.container {
 	/* background-color:rgb(241, 241, 241); */
 	/* background-color: rgb(245, 245, 245); */
-	background-color: rgb(255, 255, 255);
+	/* background-color: rgb(255, 255, 255); */
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	width: 100%;
+	/* font-size: 2rem; */
 }
-
 /*------ Hrs ------ */
 
 .mainHr {
@@ -96,8 +96,10 @@ hr {
 .navHr {
 	border: 1px solid rgb(194, 194, 194);
 	padding: 0;
-	margin: 1rem auto;
+	margin: 1rem 0;
 }
+
+
 /*-------------- HEADER--------------*/
 header {
 	/* background-color:rgb(241, 241, 241); */
@@ -199,24 +201,66 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 
 
-
 /*-------------- MAIN --------------*/
 main {
-    padding: 2rem 0;
-    background-color:rgb(218, 223, 230);
+    /* padding: 2rem 0; */
+    /* background-color:rgb(218, 223, 230); */
     min-height: 10rem;
 }
+
+/*-------------- Schedule --------------*/
+#yogaSchedules {background-color:#fff; padding: 2% 0;}
+
+#schedule {
+	text-align: left;
+	width: 80%;
+    margin: 0 auto;
+	padding: 0 2%; 
+}
+
+#schedule span {color: rgb(0, 140, 255);}
+
+#day {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#schedule h1 {font-size: 2rem; text-align: center; text-transform: none;}
+#day h2 {padding: 1rem 0; font-weight: 700;}
+#day h3 {padding: .5rem 0; font-weight: 400;}
+
+/*-------------- Prices --------------*/
+#allPrices {background-color:#fff; padding: 0 0 2% 0;}
+#allPrices hr {margin-bottom: 1rem;}
+#prices {
+	text-align: center;
+	width: 60%;
+    margin: 0 auto;
+	padding: 0 2%; 
+}
+
+#prices h1 {text-align: center;}
+#prices h2 {font-size: 1.5rem;}
+#prices a {
+	text-decoration: underline;
+	color: #000;
+}
+
+
+
+/*-------------- Classes --------------*/
+#classes hr {margin: 0;}
+
+#classes {background-color:rgb(218, 223, 230); padding: 0 0 2% 0;}
+
 #classInfo {
 	font-weight: 700;
-	background-color:rgb(218, 223, 230);
 	text-align: left;
 	width: 98%;
     margin: 0 auto;
 	text-align: center;
-	padding: 0 2%;
-    
+	padding: 0 2%;  
 }
-
 
 #session {
     width: 95%;
@@ -228,7 +272,6 @@ main {
 	width: 100%;
 	text-align: left;
 	margin: 0 auto;
-
 }
 
 #session #img {
@@ -237,7 +280,6 @@ main {
 }
 #session #img img {
 	width: 80%;
-	/* max-width: 400px; */
 	padding: 0;
 	margin: auto;
 }
@@ -288,6 +330,35 @@ footer h6#footerIcons {
 
 footer h6#footerIcons:last-child {margin-right: 0;}
 
+
+
+
+
+/* TABLET */
+@media (max-width: 991px) {
+	@media (min-width: 577px) {
+		#prices {width: 100%;}
+
+		#day, #prices .row, #session, footer .container .row {display: block;}
+
+		#prices .col, footer .container .col { 
+			display: block;
+			padding: 1.4rem 2%;
+		}
+	}
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+	#schedule, #prices {width: 100%;}
+
+	#day, #prices .row, #session, footer .container .row {display: block;}
+
+	#prices .col, footer .container .col { 
+		display: block;
+		padding: 1.4rem 2%;
+	}
+}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
