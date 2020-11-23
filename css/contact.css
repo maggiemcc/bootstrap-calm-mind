@@ -53,6 +53,7 @@ table {
 /* Start your code here: */
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -206,7 +207,8 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 main {
     padding: 2rem 0;
     background-color:rgb(218, 223, 230);
-    min-height: 10rem;
+	min-height: 10rem;
+	padding-bottom: 0;
 }
 .contact {margin: 0 auto;width: 70%;}
 
@@ -218,7 +220,7 @@ main {
     text-align: center;
 }
 
-.contact form {width: 80%; margin: 0 auto;}
+.contact form {width: 90%; margin: 0 auto;}
 
 
 .contact .form-group .form-control {
@@ -230,15 +232,39 @@ main {
 
 .form-group label {padding: .3rem 0;}
 
+#info
+{
+	/* background-color: red; */
+	padding-left: 0;
+}
+
+#formMessage {
+	/* background-color: pink; */
+	height: 100%;
+	/* border: 1px solid black; */
+}
+#validationTextarea  {
+	height: 83%;
+	/* background-color: red; */
+}
+
 .contact .form-group .form-control::placeholder {color: rgba(49, 62, 79, .45);}
 
+/* form .row {
+	background-color: pink;
+	/* border: 1px solid black; */
+/* } */
 
-
+form .row .col-12 {
+	padding: 0;
+}
 .submitBtn button {
 	background-color: rgb(49, 62, 79);
 	outline: none;
 	border: none;
-	padding: 2% 6%;
+	padding: 1rem 2%;
+	width: 40%;
+	margin: 2% 0;
 }
 
 .submitBtn button:hover {
@@ -246,6 +272,7 @@ main {
 	color: rgb(49, 62, 79);
     border: 2px solid rgb(49, 62, 79);
 }
+
 
 
 .map {
@@ -267,6 +294,40 @@ main {
     position:absolute;
     height: 280px;
 }
+
+
+
+
+
+#backSection {
+		background-color: rgb(240, 240, 240);
+
+	height: 100%;
+}
+
+#backContainer {
+	margin: 0 auto;
+	text-align: center;
+	/* border: 1px solid black; */
+	padding: 3rem 0;
+}
+
+.backBTN a {
+	font-size: 2rem;
+	color: #000;
+	color: #313E4F;
+}
+.backBTN a i {
+	font-size: 6rem;
+	font-style: normal;
+	color: #d59c89;
+}
+
+.backBTN a:hover {
+	text-decoration: none;
+}
+
+
 
 /*-------------- FOOTER --------------*/
 footer {
@@ -291,6 +352,78 @@ footer h6#footerIcons {
 }
 
 footer h6#footerIcons:last-child {margin-right: 0;}
+
+
+
+
+
+
+/* TABLET */
+@media (max-width: 991px) {
+	@media (min-width: 577px) {
+		.contact, .map {
+			width: 80%;
+		}
+		.contact form {
+			width: 80%;
+			padding: 0;
+			margin: 0 auto;
+		}
+
+		.contact form .row {
+			display: block;
+		}
+		#message, #info {
+			padding: 0;
+		}
+	}
+}
+
+
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+	.row#btnRow {width: 95%;}
+
+	.contact, .map {
+		width: 90%;
+	}
+	.contact form {
+		width: 100%;
+		padding: 3% 0;
+	}
+
+	.contact form .row {
+		display: block;
+	}
+	
+	#message, #info {
+		padding: 0;
+	}
+
+	.submitBtn button {
+		width: 55%;
+	}
+
+
+
+	footer .container .row {display: block;}
+
+	footer .container .col { 
+		display: block;
+		padding: 1.4rem 2%;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+	footer .row {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
 
 
 

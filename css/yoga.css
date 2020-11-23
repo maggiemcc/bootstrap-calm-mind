@@ -53,6 +53,7 @@ table {
 /* Start your code here: */
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -217,35 +218,93 @@ main {
     margin: 0 auto;
 	padding: 0 2%; 
 }
+#schedule h1 {font-size: 2rem; text-align: center; text-transform: none;}
+#schedule h2 {font-size: 1.5rem; text-align: center; text-transform: none;}
 
-#schedule span {color: rgb(0, 140, 255);}
+#yogaSchedules span {color: rgb(0, 140, 255);}
 
-#day {
+
+#accordion {
+	width: 100%;
 	margin: 0 auto;
-	text-align: center;
+	padding: 2% 0;
 }
 
-#schedule h1 {font-size: 2rem; text-align: center; text-transform: none;}
-#day h2 {padding: 1rem 0; font-weight: 700;}
-#day h3 {padding: .5rem 0; font-weight: 400;}
+.cardInfo {
+	margin: .8rem 0;
+}
+
+.card-header button {color:#212529;}
+
+.card-header button, .card-header .container{
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+}
+
+
+.card-header .row, .card-header .row .col-10, .card-header .row .col-2 {
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+}
+
+
+.card-header #day {text-align: left; font-weight: 500;}
+.card-header #arrow {text-align: right;}
+
+.card h3 {padding: .5rem 0; font-weight: 400;}
+
+.card-header button:hover, .card-body:hover {text-decoration: none;}
+
+.btn-link.focus, .btn-link:focus  {text-decoration: none; outline:0;}
+.btn:focus,.btn:active {
+	outline: none !important;
+	box-shadow: none;
+ }
+
+
+
+
+
 
 /*-------------- Prices --------------*/
 #allPrices {background-color:#fff; padding: 0 0 2% 0;}
 #allPrices hr {margin-bottom: 1rem;}
 #prices {
 	text-align: center;
-	width: 60%;
+	width: 70%;
     margin: 0 auto;
-	padding: 0 2%; 
+	padding: 2% 2%; 
+}
+
+#priceInfo {
+	padding: 2% 0;
+}
+
+
+li.list-group-item.active {
+	text-align: center;
+	padding: 1rem;
+	/* background-color: white; */
+	border: none;
+	/* color: #212529; */
+	background-color: #212529;
+	font-size: 2.5rem;
+	font-weight: 700;
+
+}
+li.list-group-item {
+	text-align: center;
+	padding: 1rem .6rem;
 }
 
 #prices h1 {text-align: center;}
-#prices h2 {font-size: 1.5rem;}
+
 #prices a {
 	text-decoration: underline;
 	color: #000;
 }
-
 
 
 /*-------------- Classes --------------*/
@@ -306,6 +365,54 @@ main {
 
 }
 
+
+.jumbotron.jumbotron-fluid {
+	margin: 0;
+	padding: 4rem 2%;
+}
+
+.jumbotron.jumbotron-fluid .container {
+	width: 60%;
+	text-align: center;
+	border: 5px solid rgb(49, 62, 79);
+	padding: 2% 2%;
+}
+
+.display-4 {text-align: center; text-transform: none;}
+
+
+
+
+
+#backSection {
+	background-color: rgb(240, 240, 240);
+	height: 100%;
+}
+
+#backContainer {
+	margin: 0 auto;
+	text-align: center;
+	/* border: 1px solid black; */
+	padding: 3rem 0;
+}
+
+.backBTN a {
+	font-size: 2rem;
+	color: #000;
+	color: #313E4F;
+}
+.backBTN a i {
+	font-size: 6rem;
+	font-style: normal;
+	color: #d59c89;
+}
+
+.backBTN a:hover {
+	text-decoration: none;
+}
+
+
+
 /*-------------- FOOTER --------------*/
 footer {
 	font-weight: 400;
@@ -345,19 +452,43 @@ footer h6#footerIcons:last-child {margin-right: 0;}
 			display: block;
 			padding: 1.4rem 2%;
 		}
+
+		.jumbotron.jumbotron-fluid .container {width: 80%;}
 	}
 }
 
+
+
 /* MOBILE */
 @media (max-width: 576px) {
+
+	.row#btnRow {width: 95%;}
+
+	footer {
+		width: 100%;
+	}
+
+	footer .row {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+
 	#schedule, #prices {width: 100%;}
 
-	#day, #prices .row, #session, footer .container .row {display: block;}
+	#day, #prices .row, #session, footer .container .row {
+		display: block; 
+		width: 100%;
+		margin: 0 auto;
+	}
 
-	#prices .col, footer .container .col { 
+	#prices .col, 
+	footer .container .col { 
 		display: block;
 		padding: 1.4rem 2%;
 	}
+
+	.jumbotron.jumbotron-fluid .container {width: 95%;}
 }
 
 
