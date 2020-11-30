@@ -26,6 +26,16 @@ Images and content can be frustrating to find and use in any project.  To allev
 
 - For filler text use a [lorem ipsum generator](https://www.lipsum.com/)
 
+
+## Project Requirements
+- [ ] Content matchs the picked theme.
+- [ ] Layout matches the website picked.
+- [ ] Proper Use of Bootstrap's CSS Grid System.
+- [ ] Two CSS Component
+- [ ] Two JS Component
+- [ ] Has a home, contact, and secondary page.
+
+
 ## Project Setup
 
 We will be using git throughout the semester.  Each project much be forked and cloned to get started.  
