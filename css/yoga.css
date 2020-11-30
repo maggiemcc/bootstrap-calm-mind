@@ -253,7 +253,7 @@ main {
 	background-color: purple;
 
 } */
-.card-header #day, .card-header #arrow {display: block; float: left; width: 50%; margin: 0; padding: .5rem 0;}
+.card-header #day, .card-header #arrow {display: block; float: left; width: 50%; margin: 0; padding: .5rem 0; color: #000; font-family: Arial, Helvetica, sans-serif;}
 .card-header #day {text-align: left; font-weight: 500;}
 .card-header #arrow {text-align: right;}
 
