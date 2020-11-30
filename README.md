@@ -31,8 +31,8 @@ Images and content can be frustrating to find and use in any project.  To allev
 - [ ] Content matchs the picked theme.
 - [ ] Layout matches the website picked.
 - [ ] Proper Use of Bootstrap's CSS Grid System.
-- [ ] Two CSS Component
-- [ ] Two JS Component
+- [ ] Two CSS Components
+- [ ] Two JS Components
 - [ ] Has a home, contact, and secondary page.
 
 
