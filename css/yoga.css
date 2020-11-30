@@ -427,14 +427,22 @@ footer h6 {font-size: 1.2rem; padding-bottom: 1rem;}
 
 footer h6#email {text-decoration: underline; cursor: pointer;}
 
-footer h6.footerIcons {
+/* footer h6.footerIcons {
 	display: inline-block;
 	font-size: 3rem;
 	margin-right: 8%;
 	cursor: pointer;
 }
 
-footer h6.footerIcons:last-child {margin-right: 0;}
+footer h6.footerIcons:last-child {margin-right: 0;} */
+
+footer .footerIcons {
+	display: inline-block;
+	font-size: 3rem;
+	cursor: pointer;
+	color: #fff;
+	padding: 0 2%;
+}
 
 
 
