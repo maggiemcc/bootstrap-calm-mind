@@ -345,6 +345,10 @@ footer .footerIcons {
 /* TABLET */
 @media (max-width: 991px) {
 	@media (min-width: 577px) {
+		.navHr {border: none;}
+
+		.navbar-light .navbar-toggler {margin: 2% auto;}
+		
 		.contact, .map {
 			width: 80%;
 		}
@@ -375,6 +379,10 @@ footer .footerIcons {
 
 /* MOBILE */
 @media (max-width: 576px) {
+	.navHr {border: none;}
+
+	.navbar-light .navbar-toggler {margin: 2% auto;}
+
 
 	.row#btnRow {width: 95%;}
 

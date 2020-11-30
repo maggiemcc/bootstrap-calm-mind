@@ -440,6 +440,10 @@ footer .footerIcons {
 /* TABLET */
 @media (max-width: 991px) {
 	@media (min-width: 577px) {
+		.navHr {border: none;}
+
+		.navbar-light .navbar-toggler {margin: 2% auto;}
+		
 		#prices {width: 100%;}
 
 		#prices .col, footer .container .col { 
@@ -455,6 +459,9 @@ footer .footerIcons {
 
 /* MOBILE */
 @media (max-width: 576px) {
+	.navHr {border: none;}
+
+	.navbar-light .navbar-toggler {margin: 2% auto;}
 
 	.row#btnRow {width: 95%;}
 

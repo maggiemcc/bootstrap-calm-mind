@@ -466,12 +466,17 @@ footer .footerIcons {
 /* TABLET */
 @media (max-width: 991px) {
 	@media (min-width: 577px) {
-	#peopleReviews .row, footer .container .row {display: block;}
 
-	#peopleReviews .col-3, footer .container .col { 
-		display: block;
-		padding: 1.4rem 2%;
-	}
+		.navHr {border: none;}
+
+		.navbar-light .navbar-toggler {margin: 2% auto;}
+
+		#peopleReviews .row, footer .container .row {display: block;}
+
+		#peopleReviews .col-3, footer .container .col { 
+			display: block;
+			padding: 1.4rem 2%;
+		}
 
 }
 }
@@ -479,6 +484,11 @@ footer .footerIcons {
 
 /* MOBILE */
 @media (max-width: 576px) {
+	.navHr {border: none;}
+
+	.navbar-light .navbar-toggler {margin: 2% auto;}
+
+
 	.row#btnRow {width: 95%;}
 
 	#peopleReviews .row, footer .container .row {display: block;}
