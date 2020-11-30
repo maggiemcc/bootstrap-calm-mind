@@ -85,10 +85,10 @@
 			<!-- class/signup Buttons -->
 			<div class="row" id="btnRow">
 				<div class="col">
-					<button type="button" class="btn btn-primary" id="navButtons">Schedule a Message</button>
+					<button type="button" class="btn btn-primary navButtons">Schedule a Message</button>
 				</div>
 				<div class="col">
-					<button type="button" class="btn btn-primary" id="navButtons">Sign In For Class</button>
+					<button type="button" class="btn btn-primary navButtons">Sign In For Class</button>
 				</div>
 			</div>
 		</div>
@@ -121,8 +121,8 @@
 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
 									aria-expanded="true" aria-controls="collapseOne">
 
-									<span id="day">Sunday Schedule</span>
-									<span id="arrow"> &#x25BC;</span>
+									<span class="day">Sunday Schedule</span>
+									<span class="arrow"> &#x25BC;</span>
 
 								</button>
 							</h5>
@@ -145,8 +145,8 @@
 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
 									aria-expanded="false" aria-controls="collapseTwo">
 
-									<span id="day">Monday Schedule</span>
-									<span id="arrow"> &#x25BC;</span>
+									<span class="day">Monday Schedule</span>
+									<span class="arrow"> &#x25BC;</span>
 
 								</button>
 							</h5>
@@ -170,8 +170,8 @@
 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
 									aria-expanded="false" aria-controls="collapseThree">
 				
-									<span id="day">Tuesday Schedule</span>
-									<span id="arrow"> &#x25BC;</span>
+									<span class="day">Tuesday Schedule</span>
+									<span class="arrow"> &#x25BC;</span>
 
 								</button>
 							</h5>
@@ -195,8 +195,8 @@
 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
 									aria-expanded="false" aria-controls="collapseFour">
 		
-									<span id="day">Wednesday Schedule</span>
-									<span id="arrow"> &#x25BC;</span>
+									<span class="day">Wednesday Schedule</span>
+									<span class="arrow"> &#x25BC;</span>
 
 								</button>
 							</h5>
@@ -220,8 +220,8 @@
 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
 									aria-expanded="true" aria-controls="collapseFive">
 
-									<span id="day">Thursday Schedule</span>
-									<span id="arrow"> &#x25BC;</span>
+									<span class="day">Thursday Schedule</span>
+									<span class="arrow"> &#x25BC;</span>
 
 								</button>
 							</h5>
@@ -246,8 +246,8 @@
 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
 									aria-expanded="false" aria-controls="collapseSix">
 
-									<span id="day">Friday Schedule</span>
-									<span id="arrow"> &#x25BC;</span>
+									<span class="day">Friday Schedule</span>
+									<span class="arrow"> &#x25BC;</span>
 
 								</button>
 							</h5>
@@ -269,8 +269,8 @@
 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
 									aria-expanded="false" aria-controls="collapseSeven">
 
-									<span id="day">Saturday Schedule</span>
-									<span id="arrow"> &#x25BC;</span>
+									<span class="day">Saturday Schedule</span>
+									<span class="arrow"> &#x25BC;</span>
 								</button>
 							</h5>
 						</div>
@@ -330,73 +330,20 @@
 </div> <!-- End of container-fluid prices -->
 
 
-	
 	<div class="container-fluid" id="classes">
 		<hr>
-
-
+	
+	
 		<div class="container" id="classInfo">
 			<h2>Our Yoga Classes</h2>
-			
-            <div class="row" id="session">
-
-				<div class="col" id="img">
+	
+			<div class="row session">
+				<div class="col img">
 					<img src="images/yoga-images/gentle.jpg" alt="gentle">
 				</div>
-
-				<div class="col" id="summary">
-					<h3>Gentle/Restorative Yoga</h3>
-					<ul>
-						<li>Praesent iaculis non nunc quis lacinia. Fusce elementum augue id laoreet luctus. Integer
-							sagittis tempus sem luctus convallis. Nullam rutrum magna at rutrum suscipit. Donec at ante
-							varius, pellentesque purus rhoncus, dapibus sem.</li>
-					</ul>
-           		 </div>
-            </div>
-
-
-				<div class="row" id="session">
-
-					<div class="col" id="img">
-						<img src="images/yoga-images/beginner.jpg" alt="beginner">
-					</div>
-					<div class="col" id="summary">
-
-					<h3>Beginner Yoga</h3>
-					<ul>
-						<li>Praesent iaculis non nunc quis lacinia. Fusce elementum augue id laoreet luctus. Integer
-							sagittis tempus sem luctus convallis. Nullam rutrum magna at rutrum suscipit. Donec at ante
-							varius, pellentesque purus rhoncus, dapibus sem.</li>
-					</ul>
-        		 </div>
-            </div>
-
-
-				<div class="row" id="session">
-
-					<div class="col" id="img">
-						<img src="images/yoga-images/all-levels.jpg" alt="all levels">
-					</div>
-					<div class="col" id="summary">
-						<h3>All Level Yoga</h3>
-						<ul>
-							<li>Praesent iaculis non nunc quis lacinia. Fusce elementum augue id laoreet luctus. Integer
-								sagittis tempus sem luctus convallis. Nullam rutrum magna at rutrum suscipit. Donec at ante
-								varius, pellentesque purus rhoncus, dapibus sem.</li>
-						</ul>
-           			 </div>
-            </div>
-
-
-			<div class="row" id="session">
-			
-				<div class="col" id="img">
-					<img src="images/yoga-images/intermediate.jpg" alt="intermediate">
-				</div>
-			
-				<div class="col" id="summary">
-			
-					<h3>Intermediate Yoga</h3>
+	
+				<div class="col summary">
+					<a href="#!">Gentle/Restorative Yoga</a>
 					<ul>
 						<li>Praesent iaculis non nunc quis lacinia. Fusce elementum augue id laoreet luctus. Integer
 							sagittis tempus sem luctus convallis. Nullam rutrum magna at rutrum suscipit. Donec at ante
@@ -404,26 +351,80 @@
 					</ul>
 				</div>
 			</div>
-
-
-				<div class="row" id="session">
-					<div class="col" id="img">
-						<img src="images/yoga-images/personal.jpg" alt="personal">
-					</div>
-
-					<div class="col" id="summary">
-
-					<h3>1 Hour Private Session</h3>
+	
+	
+			<div class="row session">
+	
+				<div class="col img">
+					<img src="images/yoga-images/beginner.jpg" alt="beginner">
+				</div>
+	
+				<div class="col summary">
+	
+					<a href="#!">Beginner Yoga</a>
 					<ul>
 						<li>Praesent iaculis non nunc quis lacinia. Fusce elementum augue id laoreet luctus. Integer
 							sagittis tempus sem luctus convallis. Nullam rutrum magna at rutrum suscipit. Donec at ante
 							varius, pellentesque purus rhoncus, dapibus sem.</li>
 					</ul>
 				</div>
-        </div>
-	</div>
-
-</div>  <!-- end of container-fluid classes  -->
+			</div>
+	
+	
+			<div class="row session">
+	
+				<div class="col img">
+					<img src="images/yoga-images/all-levels.jpg" alt="all levels">
+				</div>
+	
+				<div class="col summary">
+					<a href="#!">All Level Yoga</a>
+					<ul>
+						<li>Praesent iaculis non nunc quis lacinia. Fusce elementum augue id laoreet luctus. Integer
+							sagittis tempus sem luctus convallis. Nullam rutrum magna at rutrum suscipit. Donec at ante
+							varius, pellentesque purus rhoncus, dapibus sem.</li>
+					</ul>
+				</div>
+			</div>
+	
+	
+			<div class="row session">
+	
+				<div class="col img">
+					<img src="images/yoga-images/intermediate.jpg" alt="intermediate">
+				</div>
+	
+				<div class="col summary">
+	
+					<a href="#!">Intermediate Yoga</a>
+					<ul>
+						<li>Praesent iaculis non nunc quis lacinia. Fusce elementum augue id laoreet luctus. Integer
+							sagittis tempus sem luctus convallis. Nullam rutrum magna at rutrum suscipit. Donec at ante
+							varius, pellentesque purus rhoncus, dapibus sem.</li>
+					</ul>
+				</div>
+			</div>
+	
+	
+			<div class="row session">
+	
+				<div class="col img">
+					<img src="images/yoga-images/personal.jpg" alt="personal">
+				</div>
+	
+				<div class="col summary">
+	
+					<a href="#!">1 Hour Private Session</a>
+					<ul>
+						<li>Praesent iaculis non nunc quis lacinia. Fusce elementum augue id laoreet luctus. Integer
+							sagittis tempus sem luctus convallis. Nullam rutrum magna at rutrum suscipit. Donec at ante
+							varius, pellentesque purus rhoncus, dapibus sem.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	</div> <!-- end of container-fluid classes  -->
 
 
 
@@ -471,8 +472,8 @@
 					</div>
 					<div class="col">
 						<h6>Follow Us</h6>
-						<h6 id="footerIcons"><i class="fab fa-facebook-square"></i></h6>
-						<h6 id="footerIcons"><i class="fab fa-instagram"></i></h6>
+						<h6 class="footerIcons"><i class="fab fa-facebook-square"></i></h6>
+						<h6 class="footerIcons"><i class="fab fa-instagram"></i></h6>
 
 					</div>
 					<div class="col">
