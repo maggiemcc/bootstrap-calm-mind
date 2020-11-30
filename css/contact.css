@@ -61,22 +61,22 @@ body {
 	font-family: 'Kufam', cursive;
 }
 
-.container {
-	max-width: 800px;
+.container-fluid {
+	/* max-width: 800px; */
 	margin: 0 auto;
-	font-size: 2rem;
+	padding: 0;
 }
+
 
 /*-------------- HEADER/NAV Container --------------*/
-.container-fluid {
+.container {
 	/* background-color:rgb(241, 241, 241); */
 	/* background-color: rgb(245, 245, 245); */
-	background-color: rgb(255, 255, 255);
+	/* background-color: rgb(255, 255, 255); */
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	width: 100%;
 }
-
 /*------ Hrs ------ */
 
 .mainHr {
@@ -91,13 +91,11 @@ hr {
 	margin: 0;
 }
 
-.navHr:first-child {margin-bottom: 1.5rem;}
-.navHr:last-child {margin-top: 1.5rem;}
-
 .navHr {
 	border: 1px solid rgb(194, 194, 194);
 	padding: 0;
-	margin: 1rem auto;
+	margin: 0 auto;
+	width: 100%;
 }
 
 
