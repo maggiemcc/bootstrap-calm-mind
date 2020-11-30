@@ -258,6 +258,11 @@ main {
 	color: rgb(49, 62, 79);
     border: 2px solid rgb(49, 62, 79);
 }
+.modal-header .close span {font-size: 2.2rem;}
+.modal-title {font-weight: 500;}
+.modal-body {font-family: 'Montserrat', sans-serif;}
+
+.modal-footer .btn.btn-secondary {background-color: rgb(49, 62, 79); border: none;}
 
 
 

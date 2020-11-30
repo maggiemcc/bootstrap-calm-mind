@@ -242,12 +242,10 @@ main {
 
 
 #yogaSchedules .day, #yogaSchedules .arrow {display: block; float: left; width: 50%; margin: 0; padding: .5rem 0; color: #212529;}
-.card-header .day {text-align: left; font-weight: 500;}
-.card-header .arrow {text-align: right;}
+#yogaSchedules .day {text-align: left; font-weight: 500;}
+#yogaSchedules .arrow {text-align: right;}
 
-
-.card h3 {padding: .5rem 0; font-weight: 400;}
-
+.card h3 {padding: .5rem 0; font-weight: 400; font-family: 'Montserrat', sans-serif;}
 .card-header button:hover, .card-body:hover {text-decoration: none;}
 
 .btn-link.focus, .btn-link:focus  {text-decoration: none; outline:0;}
@@ -375,7 +373,9 @@ li.list-group-item {
 	padding: 2% 2%;
 }
 
-.display-4 {text-align: center; text-transform: none;}
+.display-4 {text-align: center; text-transform: none; margin: 0; margin-bottom: 1rem;}
+.jumbotron.jumbotron-fluid .container p {margin: 0; margin-bottom: .5rem;}
+
 
 
 
@@ -478,7 +478,6 @@ footer .footerIcons {
 	#btnRow .col {margin: 0 0 5% 0;}
 
 
-
 	footer {
 		width: 100%;
 	}
@@ -491,8 +490,8 @@ footer .footerIcons {
 
 	#schedule, #prices {width: 100%;}
 
-	.card-header .day {width: 70%;}
-	.card-header .arrow {width: 30%;}
+	#yogaSchedules .day {width: 80%;}
+	#yogaSchedules .arrow {width: 20%;}
 
 
 	#prices .row, .session, footer .container .row {

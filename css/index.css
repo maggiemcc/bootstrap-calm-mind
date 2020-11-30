@@ -268,6 +268,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	font-weight: 700;
 	font-size: 1.8rem;
 	padding-top: 1rem;
+	text-align: center;
 }
 .classInfo h3 {
 	font-family: 'Kufam', cursive;
@@ -283,6 +284,16 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	font-weight: 500;
 	line-height: 1.7rem;
 	font-family: 'Montserrat', sans-serif;
+}
+
+.classInfo ul li {
+	padding: 1rem 0;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-weight: 400;
 }
 
 
@@ -321,6 +332,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	font-size: 1.5rem;
 	color: #000;
 	font-family: 'Montserrat', sans-serif;
+	text-align: left;
 }
 
 
@@ -344,6 +356,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	padding: 0;
 	margin: 0 auto;
 	 width: 100%;
+	 line-height: 2rem;
  }
 
 #totalReviews #title {
@@ -369,9 +382,12 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	padding: 0;
 }
 
-.bi.bi-star-fill {color: green; font-size: 1.2rem;}
-#totalReviews #stars h6 {text-align: right;}
 
+
+#stars .bi.bi-star-fill {color: green; font-size: 2rem;}
+.bi.bi-star-fill {color: green; font-size: 1.2rem;}
+
+#totalReviews #stars h6 {text-align: right;}
 
 #totalReviews hr {
 	width: 85%;
@@ -404,10 +420,14 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 #peopleReviews .col-3 p {font-family: 'Montserrat', sans-serif;}
 
+.person p {color: rgb(117, 117, 117); font-weight: 500;}
+
 .commentPages {padding: 2rem 2% 5rem 2%;}
 
 
 
+
+/* Back to top */
 #backSection {
 	background-color: rgb(240, 240, 240);
 	height: 100%;
@@ -477,6 +497,12 @@ footer .footerIcons {
 		
 		#btnRow .col {margin: 0 0 5% 0;}
 
+		#totalReviews .row {padding-top: 2rem;}
+		#totalReviews .row, #totalReviews #title, #totalReviews #stars {display: block; width: 100%; text-align: center; margin: 0 auto; }
+		#totalReviews #title, #totalReviews #stars h6 {padding: 1rem 0;}
+		#totalReviews #title h2 {font-size: 2.5rem;}
+		#totalReviews #stars h6 {text-align: center;}
+
 		#peopleReviews .row, footer .container .row {display: block;}
 
 		#peopleReviews .col-3, footer .container .col { 
@@ -493,6 +519,7 @@ footer .footerIcons {
 
 	.navbar-light .navbar-toggler {margin: 2% auto;}
 
+
 	.row#btnRow {
 		width: 90%;
 		display: block; 
@@ -506,6 +533,12 @@ footer .footerIcons {
 	.virtual .row .col {margin: 0 0 5% 0;}
 
 	.virtual .row .col:last-child {margin: 0;}
+
+	#totalReviews .row {padding-top: 2rem;}
+	#totalReviews .row, #totalReviews #title, #totalReviews #stars {display: block; width: 100%; text-align: center; margin: 0 auto; }
+	#totalReviews #title, #totalReviews #stars h6 {padding: 1rem 0;}
+	#totalReviews #title h2 {font-size: 2.5rem;}
+	#totalReviews #stars h6 {text-align: center;}
 
 
 	#peopleReviews .row, footer .container .row {display: block;}
