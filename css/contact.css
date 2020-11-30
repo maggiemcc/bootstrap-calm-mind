@@ -232,32 +232,20 @@ main {
 
 .form-group label {padding: .3rem 0;}
 
-#info
-{
-	/* background-color: red; */
-	padding-left: 0;
-}
+#info{padding-left: 0;}
 
-#formMessage {
-	/* background-color: pink; */
-	height: 100%;
-	/* border: 1px solid black; */
-}
-#validationTextarea  {
-	height: 83%;
-	/* background-color: red; */
-}
+.messageBox {height: 100%;}
+
+#validationTextarea {height: 83%;}
+
 
 .contact .form-group .form-control::placeholder {color: rgba(49, 62, 79, .45);}
 
-/* form .row {
-	background-color: pink;
-	/* border: 1px solid black; */
-/* } */
-
-form .row .col-12 {
+.form-row .col-12 {
+	margin: 0;
 	padding: 0;
 }
+
 .submitBtn button {
 	background-color: rgb(49, 62, 79);
 	outline: none;
@@ -370,13 +358,13 @@ footer h6.footerIcons:last-child {margin-right: 0;}
 			margin: 0 auto;
 		}
 
-		.contact form .row {
+		.contact form .form-row {
 			display: block;
 		}
 		#message, #info {
 			padding: 0;
 		}
-		
+
 
 		footer .container .row {display: block;}
 
@@ -402,7 +390,8 @@ footer h6.footerIcons:last-child {margin-right: 0;}
 		padding: 3% 0;
 	}
 
-	.contact form .row {
+
+	.contact form .form-row {
 		display: block;
 	}
 	
@@ -436,4 +425,8 @@ footer h6.footerIcons:last-child {margin-right: 0;}
 	content: "";
 	display: table;
 	clear: both;
+  }
+
+  #exampleForm {
+	  padding: 2% 2%;
   }
