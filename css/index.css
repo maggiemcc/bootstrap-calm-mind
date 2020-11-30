@@ -249,6 +249,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	height: 100%;
 	width: 90%;
 	font-weight: 500;
+	padding: 2% 2%;
 }
 
 .virtual .row .col button#virtualBtn:hover {background-color: #fff;}

@@ -236,22 +236,27 @@ main {
 
 .card-header button {color:#212529;}
 
-.card-header button, .card-header .container{
+.card-header button{
 	width: 100%; 
 	margin: 0;
 	padding: 0;
 }
 
 
-.card-header .row, .card-header .row .col-10, .card-header .row .col-2 {
+/* .card-header .row, .card-header .row .col-10, .card-header .row .col-2 {
 	width: 100%; 
 	margin: 0;
 	padding: 0;
-}
+} */
 
+/* #dayToggle {
+	background-color: purple;
 
+} */
+.card-header #day, .card-header #arrow {display: block; float: left; width: 50%; margin: 0; padding: .5rem 0;}
 .card-header #day {text-align: left; font-weight: 500;}
 .card-header #arrow {text-align: right;}
+
 
 .card h3 {padding: .5rem 0; font-weight: 400;}
 
@@ -446,7 +451,7 @@ footer h6#footerIcons:last-child {margin-right: 0;}
 	@media (min-width: 577px) {
 		#prices {width: 100%;}
 
-		#day, #prices .row, #session, footer .container .row {display: block;}
+		/* #day, #prices .row, #session, footer .container .row {display: block;} */
 
 		#prices .col, footer .container .col { 
 			display: block;
@@ -476,11 +481,18 @@ footer h6#footerIcons:last-child {margin-right: 0;}
 
 	#schedule, #prices {width: 100%;}
 
-	#day, #prices .row, #session, footer .container .row {
+	/* #day, #prices .row, #session, footer .container .row {
+		display: block; 
+		width: 100%;
+		margin: 0 auto;
+	} */
+
+	#prices .row, #session, footer .container .row {
 		display: block; 
 		width: 100%;
 		margin: 0 auto;
 	}
+
 
 	#prices .col, 
 	footer .container .col { 
