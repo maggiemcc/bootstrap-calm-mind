@@ -62,7 +62,6 @@ body {
 }
 
 .container-fluid {
-	/* max-width: 800px; */
 	margin: 0 auto;
 	padding: 0;
 }
@@ -70,9 +69,6 @@ body {
 
 /*-------------- HEADER/NAV Container --------------*/
 .container {
-	/* background-color:rgb(241, 241, 241); */
-	/* background-color: rgb(245, 245, 245); */
-	/* background-color: rgb(255, 255, 255); */
 	padding: 0;
 	margin: 0 auto;
 	width: 100%;
@@ -101,13 +97,11 @@ hr {
 
 /*-------------- HEADER--------------*/
 header {
-	/* background-color:rgb(241, 241, 241); */
 	padding: 1rem 2%;
 	text-align: center;
 }
 
 header h1 a {
-	/* color: rgb(49, 62, 79); */
 	color: rgb(95, 95, 95);
 	font-family: 'Kufam', cursive;
 	font-size: 5rem;
@@ -116,10 +110,8 @@ header h1 a {
 }
 
 header h2 {
-	/* color: rgb(49, 62, 79); */
 	color: rgb(95, 95, 95);
 	font-family: 'Montserrat', sans-serif;
-
 	font-size: 1.3rem;
 	font-weight: 400;
 }
@@ -208,6 +200,8 @@ main {
 	min-height: 10rem;
 	padding-bottom: 0;
 }
+
+/*-------- Contact/Contact Form --------*/
 .contact {margin: 0 auto;width: 70%;}
 
 .contact h2 {
@@ -258,6 +252,9 @@ main {
 	color: rgb(49, 62, 79);
     border: 2px solid rgb(49, 62, 79);
 }
+
+
+/*-------- Modal --------*/
 .modal-header .close span {font-size: 2.2rem;}
 .modal-title {font-weight: 500;}
 .modal-body {font-family: 'Montserrat', sans-serif;}
@@ -265,7 +262,7 @@ main {
 .modal-footer .btn.btn-secondary {background-color: rgb(49, 62, 79); border: none;}
 
 
-
+/*-------- Map --------*/
 .map {
     padding: 2% 0;
     margin: 0 auto;
@@ -289,17 +286,15 @@ main {
 
 
 
-
+/*-------- Back To Top --------*/
 #backSection {
-		background-color: rgb(240, 240, 240);
-
+	background-color: rgb(240, 240, 240);
 	height: 100%;
 }
 
 #backContainer {
 	margin: 0 auto;
 	text-align: center;
-	/* border: 1px solid black; */
 	padding: 3rem 0;
 }
 
@@ -314,9 +309,7 @@ main {
 	color: #d59c89;
 }
 
-.backBTN a:hover {
-	text-decoration: none;
-}
+.backBTN a:hover {text-decoration: none;}
 
 
 
@@ -347,83 +340,53 @@ footer .footerIcons {
 
 
 
-/* TABLET */
+/*-------------- TABLET --------------*/
 @media (max-width: 991px) {
 	@media (min-width: 577px) {
 		.navHr {border: none;}
 
 		.navbar-light .navbar-toggler {margin: 2% auto;}
 	
-		.row#btnRow {
-			width: 90%;
-			display: block; 
-		}
+		.row#btnRow {width: 90%; display: block;}
 		
 		#btnRow .col {margin: 0 0 5% 0;}
 		
 
-		.contact, .map {
-			width: 80%;
-		}
+		.contact, .map {width: 80%;}
 		.contact form {
 			width: 80%;
 			padding: 0;
 			margin: 0 auto;
 		}
 
-		.contact form .form-row {
-			display: block;
-		}
-		#message, #info {
-			padding: 0;
-		}
+		.contact form .form-row {display: block;}
+		#message, #info {padding: 0;}
 
 
 		footer .container .row {display: block;}
-
-		footer .container .col { 
-			display: block;
-			padding: 1.4rem 2%;
-		}
+		footer .container .col { display: block;padding: 1.4rem 2%;}
 	}
 }
 
 
 
-/* MOBILE */
+/*-------------- MOBILE --------------*/
 @media (max-width: 576px) {
 	.navHr {border: none;}
 
 	.navbar-light .navbar-toggler {margin: 2% auto;}
 
-	.row#btnRow {
-		width: 90%;
-		display: block; 
-	}
-	
+	.row#btnRow {width: 90%; display: block;}
 	#btnRow .col {margin: 0 0 5% 0;}
 
 
-	.contact, .map {
-		width: 90%;
-	}
-	.contact form {
-		width: 100%;
-		padding: 3% 0;
-	}
-
-
-	.contact form .form-row {
-		display: block;
-	}
+	.contact, .map {width: 90%;}
+	.contact form {width: 100%; padding: 3% 0;}
+	.contact form .form-row {display: block;}
 	
-	#message, #info {
-		padding: 0;
-	}
+	#message, #info {padding: 0;}
 
-	.submitBtn button {
-		width: 55%;
-	}	
+	.submitBtn button {width: 55%;}	
 	
 
 
@@ -434,10 +397,7 @@ footer .footerIcons {
 		margin: 0 auto;
 	}
 
-	footer .container .col { 
-		display: block;
-		padding: 1.4rem 2%;
-	}
+	footer .container .col {display: block; padding: 1.4rem 2%;}
 }
 
 
@@ -447,8 +407,4 @@ footer .footerIcons {
 	content: "";
 	display: table;
 	clear: both;
-  }
-
-  #exampleForm {
-	  padding: 2% 2%;
   }

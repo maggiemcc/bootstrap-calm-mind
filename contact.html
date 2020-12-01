@@ -25,31 +25,31 @@
 <body>
 	<a id="top"></a>
 
-
+	<!-- Header/Nav Sections -->
 	<div class="container-fluid">
 		<hr class="mainHr">
 		<hr>
 		<div class="container">
 
-	
+
 			<!-- HEADER -->
 			<header>
 				<h1><a href="index.html">Calm Mind</a></h1>
 				<h2>YOGA &#8226; SPA &#8226; SELF-CARE</h2>
 			</header>
 		</div>
-	
+
 		<!-- NAVIGATION -->
 		<div class="container">
-		<hr class="navHr">
+			<hr class="navHr">
 
-	
 			<nav class="navbar navbar-expand-lg navbar-light">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-	
+
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
@@ -76,14 +76,12 @@
 					</ul>
 				</div>
 			</nav>
-		<hr class="navHr">
+			<hr class="navHr">
 
 		</div>
-	
-	
+
+		<!-- class/signup Buttons -->
 		<div class="container">
-	
-			<!-- class/signup Buttons -->
 			<div class="row" id="btnRow">
 				<div class="col">
 					<button type="button" class="btn btn-primary navButtons">Schedule a Message</button>
@@ -93,41 +91,45 @@
 				</div>
 			</div>
 		</div>
-	
-	
-	<hr>
-	<hr class="mainHr">
+
+
+		<hr>
+		<hr class="mainHr">
 
 	</div> <!-- End of container-fluid -->
 
-	<!-- MAIN -->
-    <main class="clearfix">	
 
+	<!-- MAIN -->
+	<main class="clearfix">
+			
+		<!-- Contact Form Section -->
 		<div class="contact">
 			<h2>Contact Us</h2>
-		
+
 			<form class="was-validated">
 				<div class="container">
-		
+
 					<div class="form-row">
 						<div class="col" id="info">
 							<div class="form-group">
 								<label for="validationServer01">Name*</label>
-								<input type="text" class="form-control" id="validationServer01" placeholder="John Doe" required>
-							</div>
-		
-							<div class="form-group">
-								<label for="validationServer02">Email*</label>
-								<input type="email" class="form-control" id="validationServer02" placeholder="johndoe@gmail.com"
+								<input type="text" class="form-control" id="validationServer01" placeholder="John Doe"
 									required>
 							</div>
-		
+
+							<div class="form-group">
+								<label for="validationServer02">Email*</label>
+								<input type="email" class="form-control" id="validationServer02"
+									placeholder="johndoe@gmail.com" required>
+							</div>
+
 							<div class="form-group">
 								<label for="validationServer03">Subject</label>
-								<input type="text" class="form-control is-valid" id="validationServer03" placeholder="Subject">
+								<input type="text" class="form-control is-valid" id="validationServer03"
+									placeholder="Subject">
 							</div>
 						</div>
-		
+
 						<div class="col" id="message">
 							<div class="form-group messageBox">
 								<label for="validationTextarea">Message*</label>
@@ -135,10 +137,10 @@
 									required></textarea>
 							</div>
 						</div>
-		
+
 					</div>
-		
-		
+
+
 					<div class="form-row">
 						<div class="col-12">
 							<div class="submitBtn">
@@ -148,39 +150,44 @@
 					</div>
 				</div>
 			</form>
-		
+
 		</div>
 
 
-		<!-- Modal -->
-		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<!-- Contact Submit Modal -->
+		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
 			<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h5 class="modal-title" id="staticBackdropLabel">Message Sent</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick="refreshPage()">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				</div>
-				<div class="modal-body">
-				You're message has been successfully sent. We will get back to you as soon as possible.
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal" onClick="refreshPage()">Close</button>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Message Sent</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"
+							onClick="refreshPage()">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						You're message has been successfully sent. We will respond back to you as soon as possible.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal"
+							onClick="refreshPage()">Close</button>
+					</div>
 				</div>
 			</div>
+		</div>
+
+
+		<!-- Google Map Section -->
+		<div class="map">
+
+			<div id="map-container-google-1" class="z-depth-1-half map-container">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8774364101946!2d-111.86339628459271!3d40.78670857932377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f58643297937%3A0x5d4c5c8e325e50fc!2s1600%20N%20Northview%20Dr%2C%20Salt%20Lake%20City%2C%20UT%2084103!5e0!3m2!1sen!2sus!4v1604085287428!5m2!1sen!2sus"
+					allowfullscreen=""></iframe>
 			</div>
 		</div>
-		
 
-
-        <div class="map">
-    
-            <div id="map-container-google-1" class="z-depth-1-half map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8774364101946!2d-111.86339628459271!3d40.78670857932377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f58643297937%3A0x5d4c5c8e325e50fc!2s1600%20N%20Northview%20Dr%2C%20Salt%20Lake%20City%2C%20UT%2084103!5e0!3m2!1sen!2sus!4v1604085287428!5m2!1sen!2sus" allowfullscreen=""></iframe>
-            </div>
-		</div>
-		
 		<div class="container-fluid" id="backSection">
 			<div class="container" id="backContainer">
 				<div class="backBTN">
@@ -188,9 +195,9 @@
 				</div>
 			</div>
 		</div>
-    
-    
-    </main>
+
+
+	</main>
 
 
 	<!-- FOOTER -->
@@ -208,7 +215,7 @@
 
 						<a href="#!"><i class="footerIcons fab fa-facebook-square"></i></a>
 						<a href="#!"><i class="footerIcons fab fa-instagram"></i></a>
-	
+
 					</div>
 					<div class="col">
 						<h6>We have a 24 hour cancellation policy. If an appointment is cancelled after, the client will
@@ -217,8 +224,8 @@
 					</div>
 				</div>
 			</div>
-	
-	
+
+
 		</footer>
 	</div>
 
@@ -234,15 +241,14 @@
 		crossorigin="anonymous"></script>
 
 
-
+	<!-- Script for Form Submit Modal -->
 	<script>
-	$('.was-validated').on('submit', function(e){
-		$('.modal.fade').modal('show');
-		e.preventDefault();
-	});
+		$('.was-validated').on('submit', function (e) {
+			$('.modal.fade').modal('show');
+			e.preventDefault();
+		});
 
-	function refreshPage(){window.location.reload();} 
-
+		function refreshPage() { window.location.reload(); }
 	</script>
 
 </body>

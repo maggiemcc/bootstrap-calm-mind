@@ -63,20 +63,15 @@ body {
 }
 
 .container-fluid {
-	/* max-width: 800px; */
 	margin: 0 auto;
 	padding: 0;
 }
 
 /*-------------- HEADER/NAV Container --------------*/
 .container {
-	/* background-color:rgb(241, 241, 241); */
-	/* background-color: rgb(245, 245, 245); */
-	/* background-color: rgb(255, 255, 255); */
 	padding: 0;
 	margin: 0 auto;
 	width: 100%;
-	/* font-size: 2rem; */
 }
 /*------ Hrs ------ */
 
@@ -103,13 +98,11 @@ hr {
 
 /*-------------- HEADER--------------*/
 header {
-	/* background-color:rgb(241, 241, 241); */
 	padding: 1rem 2%;
 	text-align: center;
 }
 
 header h1 a {
-	/* color: rgb(49, 62, 79); */
 	color: rgb(95, 95, 95);
 	font-family: 'Kufam', cursive;
 	font-size: 5rem;
@@ -118,10 +111,8 @@ header h1 a {
 }
 
 header h2 {
-	/* color: rgb(49, 62, 79); */
 	color: rgb(95, 95, 95);
 	font-family: 'Montserrat', sans-serif;
-
 	font-size: 1.3rem;
 	font-weight: 400;
 }
@@ -427,7 +418,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 
 
-/* Back to top */
+/*-------- Back To Top --------*/
 #backSection {
 	background-color: rgb(240, 240, 240);
 	height: 100%;
@@ -436,7 +427,6 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 #backContainer {
 	margin: 0 auto;
 	text-align: center;
-	/* border: 1px solid black; */
 	padding: 3rem 0;
 }
 
@@ -451,9 +441,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 	color: #d59c89;
 }
 
-.backBTN a:hover {
-	text-decoration: none;
-}
+.backBTN a:hover {text-decoration: none;}
 
 
 /*-------------- FOOTER --------------*/
@@ -483,18 +471,14 @@ footer .footerIcons {
 
 
 
-/* TABLET */
+/*-------- TABLET --------*/
 @media (max-width: 991px) {
 	@media (min-width: 577px) {
 
 		.navHr {border: none;}
 		.navbar-light .navbar-toggler {margin: 2% auto;}
 
-		.row#btnRow {
-			width: 65%;
-			display: block; 
-		}
-		
+		.row#btnRow {width: 65%; display: block; }
 		#btnRow .col {margin: 0 0 5% 0;}
 
 		#totalReviews .row {padding-top: 2rem;}
@@ -504,34 +488,24 @@ footer .footerIcons {
 		#totalReviews #stars h6 {text-align: center;}
 
 		#peopleReviews .row, footer .container .row {display: block;}
-
-		#peopleReviews .col-3, footer .container .col { 
-			display: block;
-			padding: 1.4rem 2%;
-		}
+		#peopleReviews .col-3, footer .container .col {display: block; padding: 1.4rem 2%;}
 }
 }
 
 
-/* MOBILE */
+/*-------- MOBILE --------*/
 @media (max-width: 576px) {
 	.navHr {border: none;}
 
 	.navbar-light .navbar-toggler {margin: 2% auto;}
 
 
-	.row#btnRow {
-		width: 90%;
-		display: block; 
-	}
-	
+	.row#btnRow {width: 90%; display: block; }
 	#btnRow .col {margin: 0 0 5% 0;}
 
 
 	.virtual .row {display: block;}
-	
 	.virtual .row .col {margin: 0 0 5% 0;}
-
 	.virtual .row .col:last-child {margin: 0;}
 
 	#totalReviews .row {padding-top: 2rem;}
@@ -542,18 +516,10 @@ footer .footerIcons {
 
 
 	#peopleReviews .row, footer .container .row {display: block;}
-
-	#peopleReviews .col-3, footer .container .col { 
-		display: block;
-		padding: 1.4rem 2%;
-	}
+	#peopleReviews .col-3, footer .container .col {display: block; padding: 1.4rem 2%;}
 
 	footer {width: 100%;}
-
-	footer .row {
-		width: 100%;
-		margin: 0 auto;
-	}
+	footer .row {width: 100%; margin: 0 auto;}
 }
 
 

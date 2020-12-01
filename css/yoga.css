@@ -62,20 +62,15 @@ body {
 }
 
 .container-fluid {
-	/* max-width: 800px; */
 	margin: 0 auto;
 	padding: 0;
 }
 
 /*-------------- HEADER/NAV Container --------------*/
 .container {
-	/* background-color:rgb(241, 241, 241); */
-	/* background-color: rgb(245, 245, 245); */
-	/* background-color: rgb(255, 255, 255); */
 	padding: 0;
 	margin: 0 auto;
 	width: 100%;
-	/* font-size: 2rem; */
 }
 /*------ Hrs ------ */
 
@@ -101,13 +96,11 @@ hr {
 
 /*-------------- HEADER--------------*/
 header {
-	/* background-color:rgb(241, 241, 241); */
 	padding: 1rem 2%;
 	text-align: center;
 }
 
 header h1 a {
-	/* color: rgb(49, 62, 79); */
 	color: rgb(95, 95, 95);
 	font-family: 'Kufam', cursive;
 	font-size: 5rem;
@@ -116,7 +109,6 @@ header h1 a {
 }
 
 header h2 {
-	/* color: rgb(49, 62, 79); */
 	color: rgb(95, 95, 95);
 	font-family: 'Montserrat', sans-serif;
 
@@ -201,11 +193,7 @@ h2 {margin: 1.5rem 0 .5rem 0;}
 
 
 /*-------------- MAIN --------------*/
-main {
-    /* padding: 2rem 0; */
-    /* background-color:rgb(218, 223, 230); */
-    min-height: 10rem;
-}
+main {min-height: 10rem;}
 
 /*-------------- Schedule --------------*/
 #yogaSchedules {background-color:#fff; padding: 2% 0;}
@@ -249,12 +237,7 @@ main {
 .card-header button:hover, .card-body:hover {text-decoration: none;}
 
 .btn-link.focus, .btn-link:focus  {text-decoration: none; outline:0;}
-.btn:focus,.btn:active {
-	outline: none !important;
-	box-shadow: none;
- }
-
-
+.btn:focus,.btn:active {outline: none !important; box-shadow: none;}
 
 
 
@@ -269,17 +252,13 @@ main {
 	padding: 2% 2%; 
 }
 
-#priceInfo {
-	padding: 2% 0;
-}
+#priceInfo {padding: 2% 0;}
 
 
 li.list-group-item.active {
 	text-align: center;
 	padding: 1rem;
-	/* background-color: white; */
 	border: none;
-	/* color: #212529; */
 	background-color: #212529;
 	font-size: 2.5rem;
 	font-weight: 700;
@@ -360,6 +339,7 @@ li.list-group-item {
 
 
 
+/*-------- Holiday Hourse Jumbotron --------*/
 
 .jumbotron.jumbotron-fluid {
 	margin: 0;
@@ -380,6 +360,7 @@ li.list-group-item {
 
 
 
+/*-------- Back To Top --------*/
 
 #backSection {
 	background-color: rgb(240, 240, 240);
@@ -389,7 +370,6 @@ li.list-group-item {
 #backContainer {
 	margin: 0 auto;
 	text-align: center;
-	/* border: 1px solid black; */
 	padding: 3rem 0;
 }
 
@@ -404,9 +384,7 @@ li.list-group-item {
 	color: #d59c89;
 }
 
-.backBTN a:hover {
-	text-decoration: none;
-}
+.backBTN a:hover {text-decoration: none;}
 
 
 
@@ -437,26 +415,19 @@ footer .footerIcons {
 
 
 
-/* TABLET */
+/*-------------- TABLET --------------*/
 @media (max-width: 991px) {
 	@media (min-width: 577px) {
 		.navHr {border: none;}
 
 		.navbar-light .navbar-toggler {margin: 2% auto;}
 	
-		.row#btnRow {
-			width: 90%;
-			display: block; 
-		}
-		
+		.row#btnRow {width: 90%; display: block; }
 		#btnRow .col {margin: 0 0 5% 0;}
 
 		#prices {width: 100%;}
 
-		#prices .col, footer .container .col { 
-			display: block;
-			padding: 1.4rem 2%;
-		}
+		#prices .col, footer .container .col {display: block; padding: 1.4rem 2%;}
 
 		.jumbotron.jumbotron-fluid .container {width: 80%;}
 	}
@@ -464,29 +435,18 @@ footer .footerIcons {
 
 
 
-/* MOBILE */
+/*-------------- MOBILE --------------*/
 @media (max-width: 576px) {
 	.navHr {border: none;}
 
 	.navbar-light .navbar-toggler {margin: 2% auto;}
 
-	.row#btnRow {
-		width: 90%;
-		display: block; 
-	}
-	
+	.row#btnRow {width: 90%; display: block;}
 	#btnRow .col {margin: 0 0 5% 0;}
 
 
-	footer {
-		width: 100%;
-	}
-
-	footer .row {
-		width: 100%;
-		margin: 0 auto;
-	}
-
+	footer {width: 100%;}
+	footer .row {width: 100%; margin: 0 auto;}
 
 	#schedule, #prices {width: 100%;}
 
@@ -508,10 +468,7 @@ footer .footerIcons {
 
 
 	#prices .col, 
-	footer .container .col { 
-		display: block;
-		padding: 1.4rem 2%;
-	}
+	footer .container .col { display: block; padding: 1.4rem 2%;}
 
 	.jumbotron.jumbotron-fluid .container {width: 95%;}
 }
