@@ -5,7 +5,7 @@ https://www.cradleyoursoulym.com/
 My website URL is:
 https://mm-calm-mind.netlify.app/
 
-# Marketing Website
+# Bootstrap Website & Greensock Animation
 
 You are to demonstrate that you know how to use basic HTML and CSS by building a responsive single page marketing webpage for one of these three companies:
 
@@ -34,6 +34,10 @@ Images and content can be frustrating to find and use in any project.  To allev
 - [ ] Two CSS Components
 - [ ] Two JS Components
 - [ ] Has a home, contact, and secondary page.
+
+- [ ] Select animation library from list (Greensock)
+- [ ] Implement on a previous project (Bootstrap)
+- [ ] Animate at least ONE element on your site (header fade text and mouse follower)
 
 
 ## Project Setup

@@ -61,6 +61,16 @@ body {
 	font-family: 'Kufam', cursive;
 }
 
+.ball {
+	width: 20px;
+	height: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border: 3px solid rgb(49, 62, 79);
+	border-radius: 50%;
+  }
+
 .container-fluid {
 	margin: 0 auto;
 	padding: 0;
@@ -119,6 +129,53 @@ header h2 {
 header h1 a:hover {
 	text-decoration: none;
 	color: rgb(95, 95, 95);
+}
+
+
+#fadeIn {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	padding: .5rem 0;
+	margin: 2rem auto 1rem auto;
+	text-align: center;
+  }
+  
+  .box {
+	width: 20%;
+	height: 30px;
+	position: relative;
+	border-radius: 6px;
+	display: inline-block;
+	line-height: 30px;
+  }
+
+  .box.power h2, .box.wisdom h2, .box.tribe h2  {
+	  margin: 0;
+	  font-family: 'Kufam', cursive;
+	  text-align: center;
+	  font-weight: 700;
+	  padding: 0;
+	  font-size: 30px;
+	}
+
+.box.power h2 {
+	background: linear-gradient(to right, rgb(49, 62, 79) 0%, rgb(93, 115, 146) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.box.wisdom h2 {
+	background: linear-gradient(to right, rgb(105, 130, 165) 0%, rgb(105, 130, 165) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.box.tribe h2 {
+	background: linear-gradient(to right, rgb(93, 115, 146) 0%, rgb(49, 62, 79) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /*-------------- NAV --------------*/
