@@ -437,6 +437,9 @@ footer .footerIcons {
 
 /*-------------- MOBILE --------------*/
 @media (max-width: 576px) {
+	.ball {
+		display: none;
+	  }
 
 	#fadeIn {width: 100%; margin: 2rem auto 0 auto; grid-template-columns: 1fr;}
 	.box {height: 30px; margin: 2% auto;}
