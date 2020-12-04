@@ -136,21 +136,22 @@ header h1 a:hover {
 
 #fadeIn {
 	height: 100%;
-	width: 100%;
+	width: 60%;
 	position: relative;
-	display: inline-block;
 	padding: .5rem 0;
 	margin: 2rem auto 1rem auto;
 	text-align: center;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
   }
   
   .box {
-	width: 20%;
 	height: 30px;
 	position: relative;
 	border-radius: 6px;
 	display: inline-block;
 	line-height: 30px;
+	margin: 0 auto;
   }
 
   .box.power h2, .box.wisdom h2, .box.tribe h2  {
@@ -179,9 +180,6 @@ header h1 a:hover {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
-
-
 
 
 
@@ -539,16 +537,16 @@ footer .footerIcons {
 @media (max-width: 991px) {
 	@media (min-width: 577px) {
 
+		#fadeIn {width: 70%; margin: 2rem auto 0 auto;}
+		.box {height: 26px; margin: 0 auto;}
+		.box.power h2, .box.wisdom h2, .box.tribe h2  {font-size: 25px;}
+
+
 		.navHr {border: none;}
 		.navbar-light .navbar-toggler {margin: 2% auto;}
 
 		.row#btnRow {width: 65%; display: block; }
 		#btnRow .col {margin: 0 0 5% 0;}
-
-		.box {
-			width: 70%;
-			margin: 2% auto;
-		}
 
 		#totalReviews .row {padding-top: 2rem;}
 		#totalReviews .row, #totalReviews #title, #totalReviews #stars {display: block; width: 100%; text-align: center; margin: 0 auto; }
@@ -564,6 +562,12 @@ footer .footerIcons {
 
 /*-------- MOBILE --------*/
 @media (max-width: 576px) {
+
+	#fadeIn {width: 100%; margin: 2rem auto 0 auto; grid-template-columns: 1fr;}
+	.box {height: 30px; margin: 2% auto;}
+	.box.power h2, .box.wisdom h2, .box.tribe h2  {font-size: 30px;}
+
+
 	.navHr {border: none;}
 
 	.navbar-light .navbar-toggler {margin: 2% auto;}
@@ -571,13 +575,6 @@ footer .footerIcons {
 
 	.row#btnRow {width: 90%; display: block; }
 	#btnRow .col {margin: 0 0 5% 0;}
-
-
-	.box {
-		width: 70%;
-		margin: 2% auto;
-	}
-
 
 	.virtual .row {display: block;}
 	.virtual .row .col {margin: 0 0 5% 0;}

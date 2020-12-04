@@ -1,3 +1,4 @@
+// Cursor Follower
 gsap.set(".ball", { xPercent: 50, yPercent: 50 });
 
 var ball = document.querySelector(".ball");
@@ -23,7 +24,7 @@ gsap.ticker.add(() => {
 });
 
 
-
+// Text fade Effect
 gsap.registerEffect({
     name: "fade",
     defaults: { duration: 2 },
