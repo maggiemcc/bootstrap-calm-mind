@@ -62,14 +62,17 @@ body {
 }
 
 .ball {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	border: 3px solid rgb(49, 62, 79);
+	background-color: #fff;
 	border-radius: 50%;
   }
+
+  .ball img {width: 100%;}
 
 .container-fluid {
 	margin: 0 auto;

@@ -63,14 +63,17 @@ body {
 }
 
 .ball {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	border: 3px solid rgb(49, 62, 79);
+	background-color: #fff;
 	border-radius: 50%;
   }
+
+  .ball img {width: 100%;}
 
 
 .container-fluid {
@@ -146,11 +149,10 @@ header h1 a:hover {
   }
   
   .box {
-	height: 30px;
+	height: 31px;
 	position: relative;
 	border-radius: 6px;
 	display: inline-block;
-	line-height: 30px;
 	margin: 0 auto;
   }
 
@@ -213,34 +215,33 @@ li.nav-item.active a, li.nav-item:hover a {font-weight: 600;}
 
 
 /*-------------- btnRow --------------*/
-.row#btnRow {
-	width: 80%;
-	margin: 2% auto;
-	padding: .3rem 0 2rem 0;
-}
-
-#btnRow .col {
-	display: flex; 
-	justify-content: center;
-	align-items: center;
-}
-
-
-.navButtons {
-	width: 100%;
-	background-color: rgb(49, 62, 79);
-	outline: none;
-	border: none;
-	padding: .8rem 0;
-}
-
-.navButtons:hover {
-	background-color: #fff;
-	color: rgb(49, 62, 79);
-	border: 2px solid rgb(49, 62, 79);
-	margin: 0;
-}
-
+	.row#btnRow {
+		width: 80%;
+		margin: 0 auto;
+		padding: 2rem 0;
+	}
+	
+	#btnRow .col {
+		display: flex; 
+		justify-content: center;
+		align-items: center; 
+	}
+	
+	
+	.navButtons {
+		width: 100%;
+		background-color: rgb(49, 62, 79);
+		outline: none;
+		border: none;
+		padding: .8rem 0;
+	}
+	
+	.navButtons:hover {
+		background-color: #fff;
+		color: rgb(49, 62, 79);
+		border: 2px solid rgb(49, 62, 79);
+		margin: 0;
+	}
 
 
 /*-------------- H1, H2, P --------------*/

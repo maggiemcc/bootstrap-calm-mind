@@ -1,5 +1,5 @@
 // Cursor Follower
-gsap.set(".ball", { xPercent: 50, yPercent: 50 });
+gsap.set(".ball", { xPercent: 55, yPercent: 55 });
 
 var ball = document.querySelector(".ball");
 var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
