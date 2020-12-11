@@ -156,32 +156,23 @@ header h1 a:hover {
 	margin: 0 auto;
   }
 
-  .box.power h2, .box.wisdom h2, .box.tribe h2  {
+  .box.power h2  {
 	  margin: 0;
 	  font-family: 'Kufam', cursive;
 	  text-align: center;
 	  font-weight: 700;
 	  padding: 0;
 	  font-size: 30px;
+	  font-size: 20px;
+	  opacity: .7;
 	}
 
 .box.power h2 {
-	background: linear-gradient(to right, rgb(49, 62, 79) 0%, rgb(93, 115, 146) 100%);
+	background: linear-gradient(to right, rgb(49, 62, 79) 0%, rgb(93, 115, 146) 25%, rgb(49, 62, 79) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-.box.wisdom h2 {
-	background: linear-gradient(to right, rgb(105, 130, 165) 0%, rgb(105, 130, 165) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.box.tribe h2 {
-	background: linear-gradient(to right, rgb(93, 115, 146) 0%, rgb(49, 62, 79) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 
 /*-------------- NAV --------------*/
 nav.navbar.navbar-expand-lg.navbar-light {
@@ -408,7 +399,7 @@ footer .footerIcons {
 
 		#fadeIn {width: 70%; margin: 2rem auto 0 auto;}
 		.box {height: 26px; margin: 0 auto;}
-		.box.power h2, .box.wisdom h2, .box.tribe h2  {font-size: 25px;}
+		.box.power h2 {font-size: 20px;}
 
 
 		.navHr {border: none;}
@@ -444,7 +435,7 @@ footer .footerIcons {
 
 	#fadeIn {width: 100%; margin: 2rem auto 0 auto; grid-template-columns: 1fr;}
 	.box {height: 30px; margin: 2% auto;}
-	.box.power h2, .box.wisdom h2, .box.tribe h2  {font-size: 30px;}
+	.box.power h2 {font-size: 20px;}
 
 	.navHr {border: none;}
 
