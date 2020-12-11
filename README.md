@@ -6,9 +6,9 @@ My website URL is:
 https://mm-calm-mind.netlify.app/
 
 Animations:
-- [ ] header moves/fades into place on page load
-- [ ] Buttons under nav in header will move over hover
-- [ ] mouse follower
+- [ ] Header h2 text moves/fades into place on page load
+- [ ] Buttons under nav in header will move on mouse hover
+- [ ] Created mouse follower
 
 # Bootstrap Website & Greensock Animation
 
