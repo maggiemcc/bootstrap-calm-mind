@@ -37,7 +37,7 @@ Images and content can be frustrating to find and use in any project.  To allev
 
 - [ ] Select animation library from list (Greensock)
 - [ ] Implement on a previous project (Bootstrap)
-- [ ] Animate at least ONE element on your site (header fade text and mouse follower)
+- [ ] Animate at least ONE element on your site (header fade into place on page load and fade out on mouseover and mouse follower)
 
 
 ## Project Setup

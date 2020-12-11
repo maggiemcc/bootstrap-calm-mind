@@ -24,7 +24,14 @@ gsap.ticker.add(() => {
 });
 
 
-// Text fade Effect
+// Header text fade/move into position
+gsap.from(".box", {
+    opacity: 0, 
+    y: 100, 
+    duration: 1
+  });
+
+// Text fade Effect on mouseover
 gsap.registerEffect({
     name: "fade",
     defaults: { duration: 2 },
