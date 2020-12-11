@@ -5,6 +5,8 @@ https://www.cradleyoursoulym.com/
 My website URL is:
 https://mm-calm-mind.netlify.app/
 
+- [ ] Animations: header text moves/fades into place on page load. Same header text fades out on mouseover. Mouse follower.
+
 # Bootstrap Website & Greensock Animation
 
 You are to demonstrate that you know how to use basic HTML and CSS by building a responsive single page marketing webpage for one of these three companies:
@@ -37,7 +39,7 @@ Images and content can be frustrating to find and use in any project.  To allev
 
 - [ ] Select animation library from list (Greensock)
 - [ ] Implement on a previous project (Bootstrap)
-- [ ] Animate at least ONE element on your site (header fade into place on page load and fade out on mouseover and mouse follower)
+- [ ] Animate at least ONE element on your site
 
 
 ## Project Setup
