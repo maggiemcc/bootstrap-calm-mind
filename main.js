@@ -28,7 +28,7 @@ gsap.ticker.add(() => {
 gsap.from(".box", {
     opacity: 0, 
     y: 100, 
-    duration: 1.35
+    duration: 1.5
   });
 
 
@@ -41,11 +41,11 @@ gsap.from(".box", {
 //     }
 // });
 
-document.querySelectorAll(".box").forEach(function (box) {
-    box.addEventListener("mouseenter", function () {
-        gsap.effects.fade(this);
-    });
-});
+// document.querySelectorAll(".box").forEach(function (box) {
+//     box.addEventListener("mouseenter", function () {
+//         gsap.effects.fade(this);
+//     });
+// });
 
 
 // Nav Buttons hover interaction (button will follow cursor until .1 offset)
