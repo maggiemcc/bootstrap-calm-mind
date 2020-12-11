@@ -5,7 +5,7 @@ https://www.cradleyoursoulym.com/
 My website URL is:
 https://mm-calm-mind.netlify.app/
 
-- [ ] Animations: header text moves/fades into place on page load. Same header text fades out on mouseover. Mouse follower.
+Animations: header text moves/fades into place on page load. Same header text fades out on mouseover. Mouse follower.
 
 # Bootstrap Website & Greensock Animation
 
